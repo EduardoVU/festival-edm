@@ -1,0 +1,25 @@
+{
+  "name": "proyecto_festival",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "EduardoVU",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^11.0.1",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.85.0",
+    "sharp": "^0.33.5"
+  }
+}
