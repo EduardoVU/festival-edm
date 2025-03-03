@@ -115,8 +115,12 @@ const handleKeyDown = (e) => {
 }
 
 const nextImage = () => {
-    const imagen = document.querySelector('.modal img');
-    imagen.src = `src/img/gallery/full/${imagenIndex}.jpg`;
+    const imagen = document.querySelector('.modal picture');
+    imagen.innerHTML = `
+    <source srcset="build/img/gallery/full/${imagenIndex}.avif" type="image/avif">
+    <source srcset="build/img/gallery/full/${imagenIndex}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/gallery/full/${imagenIndex}.jpg" alt="imagen galeria">
+`;
 }
 
 const cerrarModal = () => {
